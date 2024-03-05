@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<body>
+    <div class="main">
+    <img src="https://nypost.com/wp-content/uploads/sites/2/2020/04/amazon-feature.jpg?quality=90&strip=all&w=744" height="100px" width="100px">
+    <div class="m">
+        <h3 id="coun">0</h3>
+        <i class="fa-solid fa-cart-shopping" onclick="inc();"></i></div></div>
+    <div class="inner">
+<div class="sp"> 
+    <div>    
+    <h3>Price  =</h3>
+    <h3 id="pr">> 500</h3>
+    </div>
+    <div>
+    <button onclick="inc();" ><i class="fa-solid fa-plus"></i></button>
+    <h3 id="count">0</h3>
+    <button onclick="dec();"><i class="fa-solid fa-minus"></i></button>
+    </div>
+</div>
+    </div>
+
+    <script >
+        let val=document.getElementById('count');
+        let pri=document.getElementById('pr');
+        let co=document.getElementById('coun');
+        let c=0;
+        let v = 0;
+        let p=500;
+
+        function inc(){
+            c++;
+            v++;
+            p=p+500;
+            co.innerHTML=c;
+            pri.innerHTML=p;
+            val.innerHTML=v;
+        }
+        function dec(){
+            if(v !=0 && p!=500 && c!=0)
+             {
+                p=p-500;
+                v--;
+                c--;
+             }
+             pri.innerHTML=p;
+             val.innerHTML=v;
+             co.innerHTML=c;
+        }
+        
+    </script>
+</head>
+</div>
+</body>
+</html>

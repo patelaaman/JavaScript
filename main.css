@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+   
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+input {
+    margin: 10px;
+}
+
+.child {
+    height: 350px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+
+
+}
+
+#response {
+    text-align: center;
+
+}

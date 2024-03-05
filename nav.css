@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+    align-items: center;
+    height: 90px;
+}
+.navbar .list ul li{
+
+    display: inline;
+    list-style: none;
+
+}
+
+ul {
+    display: flex;
+    gap:25px
+}
+.navbar i{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .navbar ul li{
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+        width:100%;
+        position:absolute;
+        left: 25px;
+        top:100px;
+        background-color: blue;
+        color: black;
+    }
+    #bars{
+        display:block;
+        background-color: aqua;
+    }
+}

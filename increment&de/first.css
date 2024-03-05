@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+   
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(244, 168, 143) ;
+}
+.header{
+    margin-left: 10px;
+    display:flex;
+    padding: 10px;
+    gap: 150px;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+#bars{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    #bars{
+        display: block;
+        position:relative;
+        left: 40px;
+        top:28px;
+        font-size: 30px;
+    }
+    #list{
+        display: none;
+    }
+    #close{
+       font-size: 10px;
+      position:relative;
+      left:560px;
+     
+    }
+    .header{
+        display:flex;
+        position: relative;
+        gap:20px;
+    }
+
+
+}
+
+
+.sec{
+    display: block;
+    padding: 10px;
+    background-color: rgb(235, 241, 218);
+}
+.pr{
+    display: flex;
+    margin-left: 8px;
+}
+.pl{
+    margin:8px;
+    display: flex;
+    gap: 15px;
+}
+.cart i{
+    font-size: 50px;
+    margin-right: 20px;
+}
+.bl{
+    display: flex;
+}
+#coun{
+   position: relative;
+   left: 40px;
+}

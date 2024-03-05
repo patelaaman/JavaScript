@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    
+    <form onsubmit="return  Validation()">
+        <div> <label>Full Name</label>
+         <input type="text" id="name">
+     </div>
+     <br>
+     <div>
+         <label>Father Name</label>
+         <input type="text" id="Fname">
+     </div>
+     <br>
+     <div>
+         <label>Cont. Number</label>
+         <input type="text" id="Cnum" minlength="10">
+     </div>
+     <br>
+     <div>
+         <label>Enter Email</label>
+         <input type="text" id="email">
+     </div>
+     <br>
+     <div>
+         <label>Password</label>
+         <input type="text" id="Password">
+     </div>
+     <br>
+     <div>
+        <label>Cpassword</label>
+        <input type="text" id="Cpassword">
+    </div>
+         <button type="submit">Submit</button>
+     </form>
+     <script src="validation.js"></script>
+</body>
+</html>

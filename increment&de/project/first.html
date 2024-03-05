@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='first.css'>
+
+</head>
+
+<body>
+    <div class="main1">
+
+        <form onsubmit="return validation()">
+            <div class="main2">
+                <p>Full Name</p>
+                <input type="text" placeholder="Enter your full name" id="name">
+            </div>
+            <div class="main2">
+                <p>Father Name</p>
+                <input type="text" placeholder="Enter your father Name" id="Fname">
+            </div>
+            <div class="main2">
+                <p>Mother Name</p>
+                <input type="text" placeholder="Enter your Mother name" id="Mname">
+            </div>
+            <div class="main2">
+                <p>Contact Number</p>
+                <input type="text" placeholder="Enter your Cantact number" id="Cnum">
+            </div>
+            <div class="main2">
+                <p>Country</p>
+                <select id="select">
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                </select>
+            </div>
+
+            <div class="main2">
+                <p>Address</p>
+                <input type="text" placeholder="Enter your Address" id="Address">
+            </div>
+            <div class="main2">
+                <p>Email </p>
+                <input type="text" placeholder="Enter your Email " id="email">
+            </div>
+            <div class="main2">
+                <p>Password</p>
+                <input type="text" placeholder="Enter your Password" id="pass">
+            </div>
+            <div class="main2">
+                <p>Data Of Birth</p>
+                <input type="date" placeholder="Enter your Address" id="dob">
+            </div>
+            <div class="main2">
+                <p>Select Your Gender
+                </p>
+                <input type="radio" name="Gender" id="Male">
+                <label for="Gender">Male</label>
+                <input type="radio" name="Gender" id="Female">
+                <label for="Gender">Female</label>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='image.css'>
+   
+</head>
+<body>
+    <section>
+    <span class="im">
+         <div><img src="flower.jpg" alt="" height="100px" onmouseover="fun1();"></div>
+         <div><img src="flow.jpg" alt="" height="100px" onmouseover="fun2();"></div>
+         <div><img src="dahila.jpg" alt="" height="120px" onmouseover="fun3();"></div>
+         <div><img src="cactus.jpg" alt="" height="195px" onmouseover="fun4();"></div>
+         <div><img src="da.jpg" alt="" height="235px" onmouseover="fun5();"></div>
+    </span>
+    <div>
+        <img src="flower.jpg" alt="" id="target" width="100%" height="500px">
+    </div>
+</section>
+    <script >
+        let img = document.getElementById('target');
+
+        function fun1(){
+            img.src="flower.jpg";
+        }
+        function fun2(){
+            img.src="flow.jpg";
+        }
+        function fun3(){
+            img.src="dahila.jpg";
+        }
+        function fun4(){
+            img.src="cactus.jpg";
+        }
+        function fun5(){
+            img.src="da.jpg"
+        }
+    </script>
+</body>
+</html>

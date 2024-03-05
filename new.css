@@ -1,0 +1,26 @@
+*{
+    background-color: rgb(248, 177, 191);
+   
+}
+form{
+    border: 2px solid #39373c;
+    border-radius: 10px;
+    height: 350px;
+    padding:20px;
+    width: 300px;
+}
+.pr{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form section{
+    padding:10px;
+}
+
+.b{
+    margin-left: 100px;
+    padding: 30px;
+}

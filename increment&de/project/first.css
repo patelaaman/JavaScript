@@ -1,0 +1,76 @@
+*{
+    margin:2px;
+}
+
+.main1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url('https://justinblackphoto.com/wp-content/uploads/2018/04/180411-_JBG1176-1333x1000.jpg');
+   height: 100%;
+   width: 100%;
+   margin: 0;
+  
+}
+form{
+    border: 2px dashed rgb(146, 104, 146);
+   margin: 50px;
+   animation-name: demo;
+   animation-duration: 2s;
+  animation-direction:alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.main2{
+    display: flex;
+    gap:5px;
+   padding: 5px;
+}
+.main2 input{
+     padding: 5px;
+     margin-right: 0px;
+}
+.main2 p{
+    border: 2px solid rgb(122, 145, 174);
+    padding: 3px;
+    margin-left: 0px;
+    
+}
+p{
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+  background-color: rgb(236, 235, 222);
+}
+button{
+   margin-left: 35%;
+}
+input{
+    border: 2px solid rgb(106, 114, 150);
+    background-color: rgb(219, 187, 187);
+}
+select{
+    width: 205px;
+    background-color: rgb(219, 187, 187);
+}
+label{
+    background-color: rgb(213, 169, 177);
+    border: 2px solid rgb(168, 146, 189);
+    height: 20px;
+   margin-top: 15px;
+}
+
+
+@keyframes demo{
+    0%{
+        box-shadow: 0px 1px 6px 4px tomato;
+    }
+    30%{
+        box-shadow: 0px 1px 6px 4px slateblue;
+    }
+    60%{
+        box-shadow: 0px 1px 6px 4px lawngreen;
+    }
+    100%{
+        box-shadow: 0px 3px 8px 2px fuchsia;
+    }
+}

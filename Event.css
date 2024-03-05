@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(214, 214, 252);
+   
+}
+form{
+    display:block;
+    align-items: center;
+    border: 2px solid blueviolet;
+    transition-property: unset;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background:transparent ;
+}
+div label{
+    width: 100px;
+    border: 2px solid rebeccapurple;
+    
+}
+d    iv{
+space:3px;
+    padding: 20px;
+}
