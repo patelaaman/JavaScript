@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <style>
+      .im{
+        display: flex;
+      }
+   </style>
+</head>
+<body>
+   <section  class="im">
+    <span>
+        <div><img src="flow.jpg" alt="this is Image" width="300px" height="150px" onmouseover="func1()"></div>
+        <div><img src="flower.jpg" alt="this is Image" width="300px" height="150px" onmouseover="func2()"></div>
+        <div><img src="da.jpg" alt="this is Image"  width="300px" height="150px" onmouseover="func3()"></div>
+        <div><img src="dahila.jpg" alt="this is Image"  width="300px" height="150px" onmouseover="func4()"></div>
+        <div><img src="cactus.jpg" alt="this is Image"  width="300px" height="150px" onmouseover="func5()"></div>
+    </span>
+     <div>
+       <img src="flow.jpg"  width="800px" height="800px" id="target">
+     </div>
+   </section>
+   <script>
+  let img = document.getElementById('target');
+   
+  function func1(){
+    img.src = "flow.jpg";
+  }
+  function func2(){
+    img.src = "flower.jpg";
+  }
+  function func3(){
+    img.src = "da.jpg";
+  }
+  function func4(){
+    img.src = "dahila.jpg";
+  }
+  function func5(){
+    img.src = "cactus.jpg";
+  }
+   </script>
+</body>
+</html>

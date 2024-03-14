@@ -1,0 +1,36 @@
+<!-- Live API mai Array of Object hi banate hai  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+</head>
+<body>
+    <h1 id="head">This is a Java Script page</h1>
+
+
+    <script >
+          let student = [
+            {name:"Aman",roll :201},
+            {name:"rahul", roll :202},
+            {name:"Vikash", roll :203},
+            {name:"kumar", roll :204}
+          ]
+
+          console.log(student);
+          console.log(student.push({name:"yogesh", roll:205}));
+          console.log(student.pop());
+          console.log(student.unshift({name:"Karan",roll :200}));
+// Map function array mai data add karne ke kaam aata hai
+
+// function ke ander function call karunga to call by function bolte 
+
+   let b = student.map((a) =>{return a.name})
+    console.log(b)
+    </script>
+</body>
+</html>
