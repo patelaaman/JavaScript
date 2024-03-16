@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+      <h1 id="demo">Jquery</h1>
+      <button type="submit" id="btn">Submit</button>
+    <script>
+        /* jquery  basic syntax ->    
+         $(document).ready(function(){
+
+        })
+        */
+      /* $() - selecter ke liye use hota
+       document .ready esliye lagaya hai kyuki  jquery pahle na chal jaye ,pahle html ka code load le and after jquert work kare
+       */
+// . ke left mai selecter aata hai and . ke right mai function aata hai  like $().function
+   
+  /*   $(document).ready(function(){
+       let u = $('#demo').html();
+       console.log(u)
+      
+    }) 
+    */
+    $(document).ready(function(){
+        $('#btn').click(function(){
+        console.log("button is working")
+      });
+      /*let a = $('#btn').click((e)=>{
+        alert("hii")
+      });*/
+    }) 
+   
+   </script>
+</body>
+</html>

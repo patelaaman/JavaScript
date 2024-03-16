@@ -6,24 +6,22 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-   
+    
 </head>
 <body>
     
-
     <script >
-        const a = {
-            name : "Aman",
-            age : 23,
-            fees :200000
-        };
-        a.name="Rahul";
-        a.email = "Aman@gmail.com"
-        console.log(a.name)
-       // console.log(a)
-        delete a.fees;
-        document.write(a)
-        
+      async function fet(){
+        let a = await fetch("http://localhost:3000/Student");
+        let b = await a.json();
+
+       document.write(b.map((e)=> `<div>${e.id} </div>
+       <div>${e.name} </div>
+       <div>${e.age} </div>
+       <div>${e.City} </div>
+      `))
+      }
+      fet()
     </script>
 </body>
 </html>

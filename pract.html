@@ -6,12 +6,38 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-      <script >
-      
-    </script>
-</body>
+         <h2 id="amount">300</h2>
+       <section>
+
+        <button onclick="inc();"><i class="fa-solid fa-plus"></i></button>
+            <h2 id="sec">0</h2>
+            <button onclick="dec();"><i class="fa-solid fa-minus"></i></button>
+       </section>
+   <script>
+     let am= document.getElementById("amount")
+     let ze=  document.getElementById("sec");
+       amm=300;
+       zee =0;
+     function inc(){
+           amm = amm+300;
+           zee++;
+
+           am.innerHTML=amm;
+           ze.innerHTML =zee;
+     }
+     function dec(){
+          if(amm != 300 && zee!= 0)
+          { amm = amm-300;
+            zee--;
+        }
+           am.innerHTML=amm;
+           ze.innerHTML =zee;
+     }
+   </script>
+    </body>
 </html>
