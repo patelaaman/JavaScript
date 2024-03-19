@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        #para {
+            display: none;
+            background-color: lightblue;
+            padding: 30px;
+        }
+        #para1 {
+            
+            background-color: lightblue;
+            padding: 30px;
+        }
+        #para2 {
+            display: none;
+            background-color: lightblue;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Slide down</button>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloremque quis voluptates
+         voluptatum, non atque officiis dolorum voluptatibus explicabo minima facere cum 
+         voluptatem porro modi, hic voluptate accusantium temporibus at.</p>
+    
+    <button id="btn1">Slide Up</button>
+     <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloremque quis voluptates
+              voluptatum, non atque officiis dolorum voluptatibus explicabo minima facere cum 
+              voluptatem porro modi, hic voluptate accusantium temporibus at.</p>
+    
+    <button id="btn2">Slide Toggle</button>
+    <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam doloremque quis voluptates
+                   voluptatum, non atque officiis dolorum voluptatibus explicabo minima facere cum 
+                   voluptatem porro modi, hic voluptate accusantium temporibus at.</p>
+    
+    <script>
+        $(document).ready(()=>{
+            $('#btn').click(()=>{
+                $('#para').slideDown(3000)
+            })
+        })
+        $(document).ready(()=>{
+            $('#btn1').click(()=>{
+                $('#para1').slideUp(300)
+            })
+        })
+        $(document).ready(()=>{
+            $('#btn2').click(()=>{
+                $('#para2').slideToggle(300)
+            })
+        })
+    </script>
+</body>
+</html>

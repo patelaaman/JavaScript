@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        #main {
+          position: relative;
+          height: 200px;
+          width: 300px;
+          background-color: blueviolet;
+        }
+       
+    </style>
+</head>
+<body>
+    <button id="anbtn">Move Right</button>
+   <div id="main"></div>
+    
+    <script>
+       /* $(document).ready(()=>{
+            $('#anbtn').click(()=>{
+                $('#main').animate({left : '300px'},2000 )
+            })
+        })
+       */
+       $(document).ready(()=>{
+            $('#anbtn').click(()=>{
+                $('#main').animate({left : '300px'},2000 ,()=>{
+                    $('#main').animate({left: '0px'},2000)
+                })
+            })
+        })
+    </script>
+</body>
+</html>
