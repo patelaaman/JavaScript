@@ -44,7 +44,7 @@ document.write("<h1>"+a+"</h1>")
 
 // sign() function is check the function is negative(-1) or positive(1) and Zero(0)
 /*
-let a = Math.sign(-83)
+let a = Math.sign(-29)
 document.write("<h1>"+a+"</h1>")
 */
 
@@ -56,20 +56,22 @@ let a = Math.trunc(Math.random()*5+1)
 document.write("<h1>"+a+"</h1>")
 */
 
-/*
+
 let base = parseInt(prompt("Enter the number"));
    if(Math.sign(base)>=0)
      document.write("<h1>"+" The number is positive "+base+"</h1>")
    else if(Math.sign(base)==0)
-     document.write("<h1>"+" The number is Zero"+base+"</h1>")
+     document.write("<h1  >"+" The number is Zero"+base+"</h1>")
    else 
      document.write("<h1>"+" The number is negstive "+base+"</h1>")
-*/
-let li =document.getElementById('sec')
+
+/*let li =document.getElementById('sec')
 let a = Math.trunc(Math.random()*5+1)
 function math(){
     a = Math.random()*5+1;
     li.innerHTML=a;
     
 }
+*/
+
 

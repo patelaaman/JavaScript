@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!-- <form onsubmit="return ready()" id="form">
+
+            <div>
+                <label>Enter Name</label>
+                <input type="text" placeholder="Enter Name" id="name">
+            </div>
+            <div>
+                <label>Enter Email</label>
+                <input type="text" placeholder="Enter Name" id="email">
+            </div>
+            <div>
+                <label>Enter password</label>
+                <input type="text" placeholder="Enter Name" id="pass">
+            </div>
+            <div>
+                <label>Enter Cpassword</label>
+                <input type="text" placeholder="Enter Name" id="cpass">
+            </div>
+            <div>
+                <label>Enter Number </label>
+                <input type="text" placeholder="Enter Name" id="num">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+       
+    </form> 
+
+<div><h1 id ='m'>500</h1>
+<div>
+<button onclick="fun1()">Plus</button>
+<h2 id="zero">0</h2>
+<button  onclick="fun2()">Minus</button></div></div>
+-->
+
+<h1 id="demo">Jquery</h1>
+<input type="text" id="inpt">
+<button type="submit" id="btn">Submit</button>
+
+
+    <script>
+        $(document).ready(function(){
+           
+           //document.write(u);
+             $('#btn').click(function(){
+                let u = $('#inpt').html();
+                document.write("this is working")
+                alert("this is aman"+u)
+             })
+            
+         })
+
+        // let  a = $('#btn').click((e) =>{
+        //     document.write("this is  working");
+        // })
+            
+        // $(document).ready(function(){
+        //    let u = $('#demo').html();
+        //    document.write(u);
+        // })
+        
+
+    /*    let  money = document.getElementById("m");
+        let z = document.getElementById("zero");
+       let  mon = 500;
+       let  ze = 0;
+function fun1(){
+    mon = mon+500;
+    ze++;
+    money.innerHTML =mon;
+    z.innerHTML = ze;
+
+}
+function fun2(){
+    if(mon != 500 && ze != 0){
+        mon = mon -500;
+        ze--;
+
+    }
+    money.innerHTML = mon;
+    z.innerHTML = ze; 
+}*/
+
+       /* function ready(){
+            let na = document.getElementById('name').value;
+            let em = document.getElementById('email').value;
+            let pa = document.getElementById('pass').value;
+            let cpa = document.getElementById('cpass').value;
+            let nu = document.getElementById('num').value;
+        if(na ==""){
+            alert("please fill the name option");
+            document.getElementById('name').focus();
+            return false;
+        }
+        else if(em ==""){
+            if(!(em.match(/[@#$%^&*]/))){
+            alert("please Add Special Charecter");
+            document.getElementById('email').focus();
+            return false;
+        }
+            else{
+            alert("please fill the  option");
+            document.getElementById('email').focus();
+            return false;
+            }
+        }
+        else if(pa ==""){
+            alert("please fill the  option");
+            document.getElementById('pass').focus();
+            return false;
+        }
+        else if(cpa ==""){
+            alert("please fill the  option");
+            document.getElementById('cpass').focus();
+            return false;
+        }
+        else if(pa != cpa){
+            alert("please enter Correct password");
+            document.getElementById('cpass').focus();
+            return false;
+        }
+        else if(nu ==""){
+            alert("please fill the  option");
+            document.getElementById('num').focus();
+            return false;
+        }
+        else if(nu.length<10||nu.length>10){
+            alert("please Enter 10 digit of the number");
+            document.getElementById('num').focus();
+            return false;
+        }
+        else if(isNaN(nu)){
+            alert("please Enter a integer digit ");
+            document.getElementById('num').focus();
+            return false;
+        }
+        }*/
+     
+     </script>
+</body>
+</html>

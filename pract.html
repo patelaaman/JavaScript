@@ -11,33 +11,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-         <h2 id="amount">300</h2>
-       <section>
+       <label>First </label>  
+       <input type="number" id="f">
+       <label>second </label>  
+       <input type="number" id="s">
+       <button onclick="math()">SUbmit</button>
+       
+       <script>
+         function math(){
+            let a = parseInt(document.getElementById('f').value);
+            let b = parseInt(document.getElementById('s').value);
+            let c = a +b;
+            //document.getElementById('answer').value = c;
 
-        <button onclick="inc();"><i class="fa-solid fa-plus"></i></button>
-            <h2 id="sec">0</h2>
-            <button onclick="dec();"><i class="fa-solid fa-minus"></i></button>
-       </section>
-   <script>
-     let am= document.getElementById("amount")
-     let ze=  document.getElementById("sec");
-       amm=300;
-       zee =0;
-     function inc(){
-           amm = amm+300;
-           zee++;
-
-           am.innerHTML=amm;
-           ze.innerHTML =zee;
-     }
-     function dec(){
-          if(amm != 300 && zee!= 0)
-          { amm = amm-300;
-            zee--;
-        }
-           am.innerHTML=amm;
-           ze.innerHTML =zee;
-     }
-   </script>
-    </body>
+            alert(c)
+          //  document.getElementById9
+         }
+       </script>
+</body>
 </html>
